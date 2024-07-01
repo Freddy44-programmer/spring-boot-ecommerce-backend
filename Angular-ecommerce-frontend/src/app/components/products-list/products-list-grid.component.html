@@ -1,0 +1,60 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- loop over the collection of products -->
+        <div class="cards__item col-md d-flex" *ngFor="let tempProduct of products">
+          <div class="card">
+            <a routerLink="/products/{{tempProduct.id}}">
+              <div class="card__image" [style.backgroundImage]="'url(' + tempProduct.imageUrl + ')'">
+                <a routerLink="/products/{{tempProduct.id}}">
+                  <img [src]="tempProduct.imageUrl" class="img-responsive" />
+                </a>
+              </div>
+            </a>
+            <div class="card__content">
+              <a routerLink="/products/{{tempProduct.id}}">
+                <div class="card__title" [title]="tempProduct.name">
+                  {{ tempProduct.name.length > 50 ? tempProduct.name.slice(0, 50) + "..." : tempProduct.name }}
+                </div>
+              </a>
+            </div>
+            <div class="Card-price">
+              <p>
+                Price: {{ tempProduct.unitPrice | currency : "R" }}
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+        <!--display the following message if products is not found-->
+        <div *ngIf="products?.length == 0" class="alert alert-warning col-md-12" role="alert">
+          <h4 style="margin-top: 25vh;">No results found!</h4>
+          <p style="margin-top: 1px;">Please check your spelling or try a more generic search term.</p>
+        </div>
+      </div>
+
+      <!--begin footer-->
+      <div class="footer-pagination">
+        <div class="row">
+          <div class="col-md-6"></div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-9" style="padding-left: 30%">
+                <!-- <ngb-pagination [(page)]="thePageNumber"
+                                 [pageSize]="thePageSize"
+                                 [collectionSize]="theTotalElements"
+                                 (pageChange)="listProducts()">
+                </ngb-pagination> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end footer-->
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Projects\\Blog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FD551D1-AB44-4338-B956-666C0D383F3B}|blog.client\\blog.client.esproj|c:\\users\\administrator\\desktop\\projects\\blog\\blog.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FD551D1-AB44-4338-B956-666C0D383F3B}|blog.client\\blog.client.esproj|solutionrelative:blog.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Projects\\Blog\\blog.client\\src\\index.html",
+              "RelativeDocumentMoniker": "blog.client\\src\\index.html",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Projects\\Blog\\blog.client\\src\\index.html",
+              "RelativeToolTip": "blog.client\\src\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-19T19:49:55.403Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

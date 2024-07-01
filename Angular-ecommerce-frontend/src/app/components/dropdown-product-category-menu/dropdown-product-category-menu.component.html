@@ -1,0 +1,19 @@
+<div class="sticky-dropdown">
+  <div id="dropdown-component" class="dropdown" (mouseenter)="openMenu()" (mouseleave)="closeMenu()">
+    <div class="selected" (click)="toggleMenu()">
+      <span *ngIf="!isSmallScreen">{{ selectedValue }}</span>
+      <span class="arrow-selected">
+        <span *ngIf="!isSmallScreen" class="arrow-down">&#9660;</span>
+      </span>
+      
+    </div>
+    <div ngbDropdownMenu aria-labelledby="dropdownMenuButton" class="menu-wrapper dropdown-menu" [ngClass]="{ 'show': menuOpen && !isSmallScreen }">
+      <div *ngFor="let tempProductCategory of productCategories" (click)="clickHandler(tempProductCategory.categoryName)">
+        <a class="dropdown-item" [routerLink]="['/category', tempProductCategory.id]" routerLinkActive="active">{{ tempProductCategory.categoryName }}</a>
+      </div>
+      <div  class="DailyDeals">
+        <h4>Daily Deals</h4>
+      </div>
+    </div>
+  </div>
+</div>
